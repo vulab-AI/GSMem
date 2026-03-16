@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning.">
+    <meta name="keywords" content="3D Gaussian Splatting, 4D Gaussian Splatting, Deblur, Blur-Aware Reconstruction, Dynamic Reconstruction">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+        <link rel="stylesheet" href="./static/css/bulma.min.css?v=20260316">
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css?v=20260316">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css?v=20260316">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+              crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css?v=20260316">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="./static/images/bard_logo.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js?v=20260316"></script>
+    <script src="./static/js/bulma-slider.min.js?v=20260316"></script>
+    <script src="./static/js/index.js?v=20260316"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning</h1>            
+            <div class="is-size-5 publication-authors">
+              <!-- <h1 class="title is-3 publication-title">CVPR 2025</h1> -->
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yiren-lu.com/" target="_blank">Yiren Lu</a><sup>1</sup><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://sairlab.org/yid/" target="_blank">Yi Du</a><sup>2</sup><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://dishengll.github.io/" target="_blank">Disheng Liu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=ytck1QsAAAAJ&hl=zh-CN" target="_blank">Yunlai Zhou</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://sairlab.org/chenw/" target="_blank">Chen Wang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://yin-yu.github.io/" target="_blank">Yu Yin</a><sup>1</sup>
+                <span aria-label="corresponding author" title="Corresponding author"><i class="fas fa-envelope"></i></span>
+              </span>
+              </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Case Western Reserve University</span><br>
+                    <span class="author-block"><sup>2</sup>Spatial AI & Robotics Lab, University at Buffalo</span><br>
+                    <span class="author-block"><i class="fas fa-envelope"></i> Corresponding author</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>denotes equal contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (Coming Soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv (Coming Soon)</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/luyr/BARD-GS" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <!-- <span class="link-block">
+                  <a href="https://drive.google.com/drive/folders/1fbpBsX9kwQER2IhHzAPKZHHB2hZ5TfZ0?usp=sharing" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Abstract</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/teaser_image.png" alt="MY ALT TEXT" style="max-width: 80%; height: auto; display: block; margin: 0 auto;"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Effective embodied exploration requires agents to accumulate and retain spatial knowledge over time. However, existing scene representations, such as discrete scene graphs or static view-based snapshots, lack <em>post-hoc re-observability</em>. If an initial observation misses a target, the resulting memory omission is often irrecoverable. To bridge this gap, we propose <strong>GSMem</strong>, a zero-shot embodied exploration and reasoning framework built upon 3D Gaussian Splatting (3DGS). By explicitly parameterizing continuous geometry and dense appearance, 3DGS serves as a persistent spatial memory that endows the agent with <em>Spatial Recollection</em>: the ability to render photorealistic novel views from optimal, previously unoccupied viewpoints. To operationalize this, GSMem employs a retrieval mechanism that simultaneously leverages parallel object-level scene graphs and semantic-level language fields. This complementary design robustly localizes target regions, enabling the agent to &ldquo;hallucinate&rdquo; optimal views for high-fidelity Vision-Language Model (VLM) reasoning. Furthermore, we introduce a hybrid exploration strategy that combines VLM-driven semantic scoring with a 3DGS-based coverage objective, balancing task-aware exploration with geometric coverage. Extensive experiments on embodied question answering and lifelong navigation demonstrate the robustness and effectiveness of our framework.
+        </p>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- pipeline overview -->
+<section class="hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Multi-level Retrieval-Rendering</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/multi-level-retrieval-render.png" alt="MY ALT TEXT"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          <b>Demonstration of Multi-level Retrieval-Rendering.</b> We retrieve task-relevant regions from two complementary cues: object-level candidates ranked by a VLM from the scene graph, and semantic-level regions retrieved from the 3D language field using CLIP-based target descriptions. Semantic Gaussians are grouped into spatially coherent clusters via neighborhood connectivity, and the most relevant clusters are kept as semantic ROIs. For each ROI, we select the best rendering view with a sample-then-score strategy. The selected view is rendered and sent to the VLM for reasoning; if evidence is still insufficient, the agent continues exploration.
+        </p>
+    </div>
+  </div>
+</section>
+<!-- End pipeline overview -->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Hybrid Exploration Strategy</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/hybrid-exploration.png" alt="MY ALT TEXT" style="max-width: 80%; height: auto; display: block; margin: 0 auto;"/>
+      </div>
+      <div class="content has-text-justified">
+        <p class="content">
+          <b>Demonstration of our Hybrid Exploration Strategy.</b> We follow frontier-based exploration and score each candidate frontier with two complementary criteria: a VLM-based semantic relevance score for task usefulness, and a geometry-oriented information score that estimates expected map improvement from the 3DGS rendering Jacobians. The policy is a simple decision rule: if any frontier has sufficiently high semantic relevance, we choose the most semantically relevant one; otherwise, we switch to the frontier with the highest geometric score to maximize informative coverage.
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Real-world Demo</h2>
+      </div>
+      <div class="content has-text-justified">
+        <p class="content">
+          In this section, we provide a real-world demo deployed on unitree go2 to showcase the real-world capability of our GSMem framework. The video demonstrates the agent's ability to perform zero-shot embodied exploration and reasoning in a real-world environment, leveraging the persistent spatial memory provided by 3D Gaussian Splatting to navigate and interact with its surroundings effectively.
+        </p>
+      </div>
+      <div class="item has-text-centered">
+        <video controls playsinline preload="metadata" style="max-width: 80%; height: auto; margin: 0 auto; display: block;">
+          <source src="static/videos/GSMem_demo_v4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<br/>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Citation</h2>
+        <p>If you find our work helpful, please consider cite us:</p>
+        <pre><code>
+          place holder for bibtex entry, coming soon
+        </code></pre>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.</p>
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        This means you are free to borrow the <a
+                            href="https://github.com/vulab-AI/BARD-GS">source code</a> of this website,
+                        we just ask that you link back to this page in the footer.
+                        Please remember to remove the analytics code included in the header of the website which
+                        you do not want on your website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
