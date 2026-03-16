@@ -1,3 +1,3 @@
-# Splat2BEV
-Project page for Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting.  
-Deployed at https://vulab-ai.github.io/Splat2BEV/
+# GSMem
+Project page for GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning.    
+Deployed at https://vulab-ai.github.io/GSMem/
